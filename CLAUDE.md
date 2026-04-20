@@ -28,6 +28,15 @@ Root scripts:
 - AI: Anthropic Claude API for classification, summaries, suggested replies.
 - Email: SendGrid or Mailgun (inbound webhooks + outbound replies).
 
+## Prisma (v7)
+
+- Schema: `server/prisma/schema.prisma` — datasource block has `provider` only (v7 no longer accepts `url` in schema).
+- Config: `server/prisma.config.ts` — holds the `DATABASE_URL` via `env()`, plus migration path.
+- Generated client: `server/generated/client/` (gitignored). Import from `../generated/client/client`.
+- Runtime wiring: `server/src/db.ts` — constructs `PrismaClient` with the `PrismaPg` driver adapter.
+- Connection string lives in `server/.env` as `DATABASE_URL`. `.env.example` has the default local shape.
+- Common commands (run from `server/`): `bunx --bun prisma generate`, `bunx --bun prisma migrate dev --name <name>`, `bunx --bun prisma studio`.
+
 ## Using context7 for documentation
 
 Use the `context7` MCP server to fetch up-to-date documentation for any library, framework, SDK, API, or CLI tool used in this project — React, Express, Prisma, Tailwind, Vite, Bun, React Router, Anthropic SDK, SendGrid/Mailgun, etc. Prefer context7 over web search or training-data recall, since library APIs change between versions.

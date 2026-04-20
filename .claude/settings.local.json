@@ -10,7 +10,10 @@
       "Bash(curl -sf http://localhost:3001/health)",
       "Bash(curl -s http://localhost:3001/health)",
       "Bash(curl -sf http://localhost:5173/)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "mcp__context7__resolve-library-id",
+      "mcp__context7__query-docs",
+      "Bash(bunx --bun prisma generate)"
     ]
   }
 }
