@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(bun *)",
+      "Read(//c/Users/X1 Extreme/.bun/bin/**)",
+      "Bash(npm --version)",
+      "Bash(powershell *)",
+      "Bash(/c/Users/X1 Extreme/.bun/bin/bun.exe *)",
+      "Bash(export PATH=\"/c/Users/X1 Extreme/.bun/bin:$PATH\")",
+      "Bash(curl -sf http://localhost:3001/health)",
+      "Bash(curl -s http://localhost:3001/health)",
+      "Bash(curl -sf http://localhost:5173/)",
+      "Bash(curl *)"
+    ]
+  }
+}
