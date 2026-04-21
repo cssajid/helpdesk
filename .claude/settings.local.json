@@ -13,7 +13,13 @@
       "Bash(curl *)",
       "mcp__context7__resolve-library-id",
       "mcp__context7__query-docs",
-      "Bash(bunx --bun prisma generate)"
+      "Bash(bunx --bun prisma generate)",
+      "Bash(bunx --bun prisma migrate dev --name init)",
+      
+      "Read(//c/Users/X1 Extreme/.claude/**)",
+      "Read(//c/Users/X1 Extreme/**)",
+      "Bash(node *)",
+      "Bash(bunx @better-auth/cli@latest generate --config src/auth.ts --y)"
     ]
   }
 }
